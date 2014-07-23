@@ -20,5 +20,11 @@ function dbGetChatCollection()
   return $db->$cname;
 }
 
+function dbGetUserCollection()
+{
+  $db = dbGetDatabase();
+  $cname = "user";
+  return $db->$cname;
+}
 
 ?>

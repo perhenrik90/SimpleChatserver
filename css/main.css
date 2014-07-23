@@ -1,0 +1,37 @@
+/******
+ * Main css file for Simple Chat
+ * 
+ * @author Per-Henrik Kvalnes
+ ************************************/
+
+body
+{ 
+  background-color:#301A73;
+  font-family:"Lucida Console";
+  text-align:center;
+}
+
+input
+{ 
+  font-size:25px;
+  background-color:#DDDDFF;
+  border-radius:5px;
+  border:1px solid black;
+}
+input:hover
+{ 
+  background-color:#CCCCEE;
+}
+.blanket
+{ 
+  background-color:#FFF;
+  margin:50px;
+  padding:20px;
+  border-radius:10px;
+}
+
+.mainH1
+{ 
+  color:#FFF;
+}
+
