@@ -1,0 +1,24 @@
+<?php
+require('config.php');
+
+function dbGetDatabase()
+{
+  require('config.php');
+  $dbname = $config["dbname"];
+  $host = $config["host"];
+  $host = "mongodb//:".$host;
+  $m = new Mongo("mongodb://localhost");
+ 
+
+  return $m->$dbname;
+}
+
+function dbGetChatCollection()
+{
+  $db = dbGetDatabase();
+  $cname = "chat";
+  return $db->$cname;
+}
+
+
+?>
