@@ -1,0 +1,32 @@
+
+#chatArea
+{ 
+  height:300px;
+  width:80%;
+  border:1px solid black;
+  border-radius:5px;
+  background-color:rgb(240,240,240);
+  margin-left:auto;
+  margin-right:auto;
+
+  overflow-y:scroll;
+}
+
+.chatRow
+{ 
+
+  height:25px;
+  margin-left:5px;
+}
+
+.nicknameString
+{ 
+  float:left;
+  text-align:left;
+  color:#AAA;
+}
+.messageString
+{
+  text-align:left;
+  margin-left:20px;
+}
