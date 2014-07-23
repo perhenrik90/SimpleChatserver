@@ -8,7 +8,11 @@
 
 <div class="blanket">
    <div id="chatArea">
+
    <?php
+   /****************************************
+    * Update the messages in the chat box 
+    ****************************************/
    require('database.php');
    $c = dbGetChatCollection();
 
@@ -28,14 +32,45 @@ foreach($result as $post)
   }
    ?>
    </div>
+   
+   <div id="inputBlanket">
+   <form method='post'>
+     <input id="messageIn" name='messageIn'></input>
+     <input type="submit"></input>
+   </form>
+  </div>
+<!-- end blanket -->
 </div>
 <?php
 
 
 
 $nickname = $_COOKIE["nickname"];
-echo $nickname;
 
+
+?>
+
+
+
+<?php
+$newmessage = $_POST["messageIn"];
+if($newmessage && $_COOKIE["nickname"])
+  {
+    //       require('database.php');
+       $c = dbGetChatCollection();
+      
+       $obj = array();
+       $obj["message"] = $newmessage;
+       $obj["nickname"] = $_COOKIE["nickname"];
+       $obj["time"] = time();
+       $c->insert($obj);
+       echo "<p>You posted $newmessage </p>";
+  }
+else if(!$_COOKIE["nickname"] && $newmessage)
+  {
+    echo "<script> window.location.href = 'index.php';"
+    . "</script>";
+  }
 ?>
 </body>
 </html>
