@@ -41,6 +41,14 @@ foreach($result as $post)
   </div>
 <!-- end blanket -->
 </div>
+<script>
+  // scroll chat area automaticly down
+  chatArea = document.getElementById("chatArea");
+  chatArea.scrollTop = chatArea.scrollTopMax;
+
+
+
+</script>
 <?php
 
 
@@ -65,6 +73,8 @@ if($newmessage && $_COOKIE["nickname"])
        $obj["time"] = time();
        $c->insert($obj);
        echo "<p>You posted $newmessage </p>";
+       echo "<script> window.location.href = 'chat.php';"
+    . "</script>";
   }
 else if(!$_COOKIE["nickname"] && $newmessage)
   {
