@@ -7,11 +7,15 @@
 require('database.php');
 $c = dbGetChatCollection();
 
+/** make a message list **/
 $result = $c->find();
-
+$list = [];
 foreach($result as $post)
   {
-    $json = json_encode($post);
-    echo $json;
+    array_push($list, $post);
   }
+
+$output = array("stream"=>$list);
+$jsonOutput = json_encode($output);
+echo $jsonOutput;
 ?>
