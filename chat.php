@@ -3,6 +3,8 @@
 <meta charset='utf8'></meta>
 <link rel="stylesheet" type="text/css" href="css/main.css"></link>
 <link rel="stylesheet" type="text/css" href="css/chat.css"></link>
+<script src="chat.js"></script>
+
 <body>
 <h1 class="mainH1">Simple Chat</h1>
 
