@@ -54,6 +54,7 @@ function onReady()
 
 	divChatArea.appendChild(chatRow);
     }
+    chatArea.scrollTop = chatArea.scrollTopMax;
 }
 
 function loadChatArea()
