@@ -44,10 +44,10 @@ foreach($result as $post)
 <!-- end blanket -->
 </div>
 <script>
-  // scroll chat area automaticly down
   chatArea = document.getElementById("chatArea");
   chatArea.scrollTop = chatArea.scrollTopMax;
 
+setInterval(loadChatArea, 1000*5);
 
 
 </script>

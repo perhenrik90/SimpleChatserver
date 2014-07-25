@@ -3,6 +3,7 @@
  * Create a JSON of chat data
  * @author Per-Henrik Kvalnes
  *******************************/
+header('Content-type: application/json');    
 
 require('database.php');
 $c = dbGetChatCollection();
@@ -17,5 +18,6 @@ foreach($result as $post)
 
 $output = array("stream"=>$list);
 $jsonOutput = json_encode($output);
+
 echo $jsonOutput;
 ?>

@@ -1,6 +1,7 @@
 
 #chatArea
 { 
+  text-align:left;
   height:300px;
   width:80%;
   border:1px solid black;
@@ -14,21 +15,19 @@
 
 .chatRow
 { 
-
-  height:25px;
-  margin-left:5px;
+  display:inline;
 }
 
 .nicknameString
 { 
-  float:left;
-  text-align:left;
   color:#AAA;
+  display:inline;
+  margin-left:5px;
 }
 .messageString
 {
-  text-align:left;
-  margin-left:20px;
+  display:inline;  
+  margin-left:5px;
 }
 
 #inputBlanket
