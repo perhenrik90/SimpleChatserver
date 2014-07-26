@@ -3,13 +3,20 @@
  * 
  * @author Per-Henrik Kvalnes
  ************************************/
+@font-face
+{ 
+  font-family:"Animated";
+  src:url("Animated.ttf");
+}
 
 body
 { 
   background-color:#301A73;
-  font-family:"Lucida Console";
+  font-family:"Animated";
   text-align:center;
 }
+
+
 
 input
 { 
@@ -17,6 +24,7 @@ input
   background-color:#DDDDFF;
   border-radius:5px;
   border:1px solid black;
+  font-family:"Animated";
 }
 input:hover
 { 
