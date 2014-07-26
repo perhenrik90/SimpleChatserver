@@ -16,7 +16,10 @@ body
   text-align:center;
 }
 
-
+.redText
+{ 
+  color:#FF8888;
+}
 
 input
 { 
